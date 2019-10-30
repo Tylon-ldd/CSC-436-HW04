@@ -2,6 +2,6 @@
 
 ##2. Time is not enough, so don't make the web beautiful.
 
-##3. It is finished on the first firebase angular application, and the necessary function.
+##3. It is finished on the first firebase angular application, add the necessary function.
 
 ##4. extra credit 1 is finished.
