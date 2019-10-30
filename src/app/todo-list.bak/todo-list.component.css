@@ -1,0 +1,47 @@
+.default-button{
+    color: black;
+    margin: 5px 5px 5px 5px;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(234, 236, 231);
+}
+
+.urgent-button{
+    color: aliceblue;
+    margin: 5px 5px 5px 0px;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(241, 134, 12);
+}
+
+.days-button{
+    color: aliceblue;
+    margin: 5px 5px 5px 0px;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(247, 202, 4);
+}
+
+.week-button{
+    color: aliceblue;
+    margin: 5px 5px 5px 0px;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(127, 194, 125);
+}
+
+
+.save-button{
+    color: aliceblue;
+    float: right;
+    margin: 5px 5px 5px 5px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:rgb(102, 188, 214);
+}
+

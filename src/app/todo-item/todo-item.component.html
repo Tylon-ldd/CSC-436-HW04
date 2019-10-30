@@ -1,0 +1,14 @@
+<td>{{i + 1}}</td>
+<td>{{task.description}}</td>
+<td>
+    <button class="default-button" [ngClass]="{'urgent-button': task.dueDate == 'Urgent'}" (click)="saveDate('Urgent')">Urgent</button>
+    <button class="default-button" [ngClass]="{'days-button': task.dueDate == 'Days'}" (click)="saveDate('Days')">Days</button>
+    <button class="default-button" [ngClass]="{'week-button': task.dueDate == 'Week'}" (click)="saveDate('Week')">Week</button>
+  <!-- <button class="btn btn-success" (click)="edit(task)">
+    <i class="fa fa-edit"></i>
+  </button> -->
+
+  <button class="btn btn-danger" (click)="deleteTask(task)">
+    <i class="fa fa-remove"></i>
+  </button>
+</td>

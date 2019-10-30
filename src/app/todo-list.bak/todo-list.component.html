@@ -1,0 +1,29 @@
+<p>
+  todo-list works!
+</p>
+
+<div class="col-md-6">
+    <table class="table table-hover">
+      <tr>
+        <th>#</th>
+        <th>Todo List</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let task of tasks | async; let i = index" [attr.data-index]="i">
+        <td>{{i + 1}}</td>
+        <td>{{task.description}}</td>
+        <td>
+            <button class="default-button" [ngClass]="{'urgent-button': urgentStatus}" (click)="saveDate('Urgent')">Urgent</button>
+            <button class="default-button" [ngClass]="{'days-button': dayStatus}" (click)="saveDate('Days')">Days</button>
+            <button class="default-button" [ngClass]="{'week-button': weekStatus}" (click)="saveDate('Week')">Week</button>
+          <button class="btn btn-success" (click)="edit(task)">
+            <i class="fa fa-edit"></i>
+          </button>
+
+          <button class="btn btn-danger" (click)="deleteTask(task)">
+            <i class="fa fa-remove"></i>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
